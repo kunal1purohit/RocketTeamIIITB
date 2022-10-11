@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKING A GYM WEBSITE</title>
+    <link rel="stylesheet" href="TUT26.CSS">
+    <STYLE>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            height: 1000px;
+            background-image: url('LOGO.jpg');
+            background-size: contain;
+            font-family: fantasy;
+
+        }
+
+        .left {
+            display: inline-block;
+            
+            position: fixed;
+            top: 10px;
+            left: 22px;
+        }
+
+        .left img {
+            width: 130px;
+        }
+
+        .mid {
+            
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+            
+
+        }
+
+        .right {
+            display: inline-block;
+            
+            position: fixed;
+            top: 10px;
+            right: 22px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(86, 84, 84);
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .container {
+            border: 5px solid white;
+            border-radius: 10px;
+            margin: 119px 450px;
+            padding: 2px auto;
+            width: 40%;
+        }
+        .container h1{
+            display:block;
+            width:100%;
+            text-align: center;
+        }
+        .container button{
+            display:block;
+            width:100%;
+            margin:25px auto;
+            background-color: black;
+            font-family: fantasy;
+            font-size: 20px;
+            color:white;
+        }
+        .container button:hover{
+            background-color: gray;
+        }
+        .formclass input{
+            display:block;
+            width:80%;
+            margin:15px auto;
+            font-family: fantasy;
+            font-size: 20px;
+            color: aliceblue;
+            background-color: black;
+            border-radius: 20px;
+            text-align: center;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="BG.png" alt="error">
+        </div>
+        <!-- mid box for nav menu -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATER</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+        <div class="container">
+            <h1>JOIN THE BEST GYM OF JODHPUR NOW</h1>
+            <form action="noaction.php">
+                <div class="formclass">
+                    <input type="text" name="name1" placeholder="enter your name">
+                </div>
+                <div class="formclass">
+                    <input type="text" name="name2" placeholder="enter your number">
+                </div>
+                <div class="formclass">
+                    <input type="text" name="name3" placeholder="enter your email">
+                </div>
+                <div class="formclass">
+                    <input type="text" name="name4" placeholder="enter your locality">
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
